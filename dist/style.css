@@ -1,82 +1,4 @@
 
-*, ::after, ::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
-  margin: 0;
-}
-
-ol[role=list], ul[role=list] {
-  list-style: none;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-body {
-  text-rendering: optimizeSpeed;
-}
-
-a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
-img, picture {
-  max-width: 100%;
-  display: block;
-}
-
-button, input, select, textarea {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-:root {
-  color-scheme: only light;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  min-height: 573px;
-  font-family: "Open Sans", sans-serif;
-  background-color: #f5f5fa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapper {
-  width: 1105px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 722px auto;
-  grid-template-columns: 722px auto;
-}
-
 .game {
   width: 100%;
   height: 573px;
@@ -256,6 +178,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .start_field_number {
@@ -288,6 +211,64 @@ body {
   line-height: 1;
 }
 
+.start_field_numbers {
+  width: 485px;
+  height: 184px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+  list-style: none;
+}
+
+.start_field_button {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.5;
+}
+
+.start_field_button-active {
+  opacity: 1;
+  position: relative;
+  background-color: #f28e37;
+}
+.start_field_button-active::after {
+  width: 96px;
+  height: 103px;
+  position: absolute;
+  top: 75%;
+  z-index: 10;
+  content: "";
+  background-image: url("./image/point.svg");
+}
+
+.start_field_button_1 {
+  background-color: #fc73b0;
+}
+
+.start_field_button_2 {
+  background-color: #8e3dcb;
+}
+
+.start_field_button_3 {
+  background-color: #94c94d;
+}
+
 .start_text {
   width: 200px;
   font-size: 14px;
@@ -295,8 +276,55 @@ body {
   color: white;
   margin-top: 30px;
 }
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-/* SIDEBAR */
+blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ol[role=list], ul[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 .sidebar {
   margin-left: 34px;
 }
@@ -313,4 +341,32 @@ body {
   font-size: 14px;
   color: #999999;
   word-wrap: break-word;
+}
+:root {
+  color-scheme: only light;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 573px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  width: 1105px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 722px auto;
+  grid-template-columns: 722px auto;
 }

@@ -5,6 +5,3 @@ function start() {
 	intro.style.display = "none"
 	startWindow.style.display = "flex";
 }
-
-intro.style.display = "none"
-startWindow.style.display = "flex";
