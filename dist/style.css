@@ -102,7 +102,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/image/background.svg");
+  background-image: url("./image/background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #4db8ec;
@@ -183,15 +183,15 @@ body {
 }
 
 .game_point_icon_1 {
-  background-image: url("/image/point_1.svg");
+  background-image: url("./image/point_1.svg");
 }
 
 .game_point_icon_2 {
-  background-image: url("/image/point_2.svg");
+  background-image: url("./image/point_2.svg");
 }
 
 .game_point_icon_3 {
-  background-image: url("/image/point_3.svg");
+  background-image: url("./image/point_3.svg");
 }
 
 .game_point_title {
