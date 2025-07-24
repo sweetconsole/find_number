@@ -1,0 +1,242 @@
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ol[role=list], ul[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  color-scheme: only light;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 573px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  width: 1105px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 722px auto;
+  grid-template-columns: 722px auto;
+}
+
+.game {
+  width: 100%;
+  height: 573px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.game_header {
+  width: 100%;
+  height: 136px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/image/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #4db8ec;
+  border-radius: 4px 4px 0 0;
+}
+.game_header::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(271deg, rgba(168, 129, 253, 0.53), #5900b1);
+  border-radius: 4px 4px 0 0;
+}
+
+.game_title {
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.game_description {
+  font-size: 18px;
+  line-height: 36px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.game_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 45px 32px;
+}
+
+.game_suptitle {
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 26px;
+  text-align: center;
+  color: #8f4af9;
+  margin-bottom: 30px;
+}
+
+.game_list {
+  list-style: none;
+}
+
+.game_point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.game_point_icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game_point_icon_1 {
+  background-image: url("/image/point_1.svg");
+}
+
+.game_point_icon_2 {
+  background-image: url("/image/point_2.svg");
+}
+
+.game_point_icon_3 {
+  background-image: url("/image/point_3.svg");
+}
+
+.game_point_title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.game_point_description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+}
+
+.game_start {
+  width: 177px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  background-color: #6039aa;
+  border: none;
+  cursor: pointer;
+  border-radius: 56px;
+  margin-top: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  margin-left: 34px;
+}
+
+.sidebar_title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.sidebar_description {
+  line-height: 1.4;
+  font-size: 14px;
+  color: #999999;
+  word-wrap: break-word;
+}
