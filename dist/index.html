@@ -16,44 +16,56 @@
 
 	<div class="wrapper">
 		<div class="game">
-			<div class="game_header">
-				<h1 class="game_title">Найди число</h1>
-				<p class="game_description">Тренажер на внимание</p>
+			<div class="game_intro" id="gameIntro">
+				<div class="game_header">
+					<h1 class="game_title">Найди число</h1>
+					<p class="game_description">Тренажер на внимание</p>
+				</div>
+				<div class="game_content">
+					<p class="game_suptitle">Тренирует:</p>
+
+					<ul class="game_list">
+						<li class="game_point">
+							<div class="game_point_icon game_point_icon_1"></div>
+
+							<div class="game_point_content">
+								<p class="game_point_title">Произвольное внимание</p>
+								<p class="game_point_description">Научитесь концентрировать внимание только на важном</p>
+							</div>
+						</li>
+
+						<li class="game_point">
+							<div class="game_point_icon game_point_icon_2"></div>
+
+							<div class="game_point_content">
+								<p class="game_point_title">Концентрацию и переключение внимания</p>
+								<p class="game_point_description">Позволит не упускать из виду важные детали</p>
+							</div>
+						</li>
+
+						<li class="game_point">
+							<div class="game_point_icon game_point_icon_3"></div>
+
+							<div class="game_point_content">
+								<p class="game_point_title">Зрительное восприятие</p>
+								<p class="game_point_description">Сможете быстро находить основные мысли в текстах</p>
+							</div>
+						</li>
+					</ul>
+
+					<button class="game_start" onclick="start()">Далее</button>
+				</div>
 			</div>
 
-			<div class="game_content">
-				<p class="game_suptitle">Тренирует:</p>
+			<div class="start_window" id="startWindow">
+				<div class="start_field">
+					<div class="start_field_number" id="fieldNumber">
+						<p class="start_field_number_text">Найдите указанное число:</p>
+						<p class="start_field_number_select">75</p>
+					</div>
 
-				<ul class="game_list">
-					<li class="game_point">
-						<div class="game_point_icon game_point_icon_1"></div>
-
-						<div class="game_point_content">
-							<p class="game_point_title">Произвольное внимание</p>
-							<p class="game_point_description">Научитесь концентрировать внимание только на важном</p>
-						</div>
-					</li>
-
-					<li class="game_point">
-						<div class="game_point_icon game_point_icon_2"></div>
-
-						<div class="game_point_content">
-							<p class="game_point_title">Концентрацию и переключение внимания</p>
-							<p class="game_point_description">Позволит не упускать из виду важные детали</p>
-						</div>
-					</li>
-
-					<li class="game_point">
-						<div class="game_point_icon game_point_icon_3"></div>
-
-						<div class="game_point_content">
-							<p class="game_point_title">Зрительное восприятие</p>
-							<p class="game_point_description">Сможете быстро находить основные мысли в текстах</p>
-						</div>
-					</li>
-				</ul>
-
-				<button class="game_start">Далее</button>
+					<div class="start_text">Нажмите на экран, чтобы продолжить</div>
+				</div>
 			</div>
 		</div>
 
